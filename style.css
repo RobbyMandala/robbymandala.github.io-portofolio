@@ -1,6 +1,13 @@
-html,
-body {
-  overflow-x: hidden;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+svg {
+  background-image: url(img/gallery/background/bg1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .jumbotron {
@@ -23,8 +30,4 @@ section {
 
 #gallery .row > * {
   padding: 0;
-}
-
-#about {
-  padding-top: 370px;
 }
