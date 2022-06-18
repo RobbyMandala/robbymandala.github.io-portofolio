@@ -1,6 +1,6 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 body,
@@ -30,4 +30,5 @@ section {
 
 #gallery .row > * {
   padding: 0;
+  margin: 0;
 }
