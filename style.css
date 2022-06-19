@@ -3,7 +3,9 @@
   margin: 0;
 }
 
-body,
+#about,
+#gallery,
+#contact,
 svg {
   background-image: url(img/gallery/background/bg1.jpg);
   background-repeat: no-repeat;
@@ -21,6 +23,15 @@ svg {
   background-color: #e2edff;
 }
 
+#projects .row .card > img {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.card {
+  max-width: 400px;
+}
+
 section {
   padding-top: 6rem;
 }
@@ -31,5 +42,82 @@ section {
 
 #gallery .row > * {
   padding: 0;
-  margin: 0;
+  margin: 10px;
+}
+
+/* My Keyboard Section */
+.keyboard-box {
+  position: relative;
+  background-color: #0d6efd;
+  border-radius: 10px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.keyboard-box::before {
+  content: "MY";
+  position: absolute;
+  color: #fff;
+  font-size: 6em;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: -100px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.keyboard-box:hover::before {
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0.2;
+}
+
+.keyboard-box::after {
+  content: "KEYBOARD";
+  position: absolute;
+  color: #fff;
+  font-size: 4em;
+  font-weight: bold;
+  font-style: italic;
+  top: 360px;
+  left: 460px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.keyboard-box:hover::after {
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0.2;
+}
+
+.keyboard-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.keyboard-box:hover .keyboard-name {
+  top: 20px;
+  opacity: 0.5;
+}
+
+.keyboard-detail-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.keyboard-box:hover .keyboard-detail-bottom {
+  opacity: 1;
+  bottom: 10px;
 }
