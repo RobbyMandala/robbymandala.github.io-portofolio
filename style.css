@@ -3,10 +3,11 @@
   margin: 0;
 }
 
+#about svg,
+#projects svg,
 #about,
 #gallery,
-#contact,
-svg {
+.jumbotron svg {
   background-image: url(img/gallery/background/bg1.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -19,7 +20,8 @@ svg {
   width: 100%;
 }
 
-#projects {
+#projects,
+#contact {
   background-color: #e2edff;
 }
 
@@ -38,6 +40,10 @@ section {
 #gallery .row > * {
   padding: 0px;
   margin: 0px;
+}
+
+#about .container .row .col {
+  margin-top: 100px;
 }
 
 /* My Keyboard Section */
