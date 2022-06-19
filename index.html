@@ -157,21 +157,21 @@
             <div class="col-md-6 col-lg-4 mb-3">
               <div class="keyboard-box">
                 <h4 class="keyboard-name">Keyboard</h4>
-                <img src="img/keyboards/" alt="" />
+                <img src="img/keyboards/1.png" alt="Keyboards1" class="keyboard-img" />
                 <a href="#" class="btn btn-light keyboard-detail-bottom">Show Details</a>
               </div>
             </div>
             <div class="col-md-6 col-lg-4 mb-3">
               <div class="keyboard-box">
                 <h4 class="keyboard-name">Keyboard</h4>
-                <img src="img/keyboards/" alt="" />
+                <img src="img/keyboards/1.png" alt="Keyboards1" class="keyboard-img" />
                 <a href="#" class="btn btn-light keyboard-detail-bottom">Show Details</a>
               </div>
             </div>
             <div class="col-md-6 col-lg-4 mb-3">
               <div class="keyboard-box">
                 <h4 class="keyboard-name">Keyboard</h4>
-                <img src="img/keyboards/" alt="" />
+                <img src="img/keyboards/1.png" alt="Keyboards1" class="keyboard-img" />
                 <a href="#" class="btn btn-light keyboard-detail-bottom">Show Details</a>
               </div>
             </div>
@@ -344,6 +344,14 @@
             console.log("Success!", response);
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".keyboard-box"), {
+        max: 30,
+        speed: 500,
+        glare: true,
       });
     </script>
     <!-- AKHIR SCRIPTS -->
