@@ -24,8 +24,12 @@ svg {
 }
 
 #projects .row .card img {
-  height: 390px;
-  min-width: 390px;
+  height: 460px;
+  width: 100%;
+}
+
+.card {
+  width: 100%;
 }
 
 section {
